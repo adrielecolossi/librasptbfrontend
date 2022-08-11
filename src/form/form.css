@@ -1,0 +1,20 @@
+h1{
+    font-size: 2em;
+    margin:auto;
+}
+
+.topic{
+    width: 60%;
+    background-color: #f8d681;
+  
+}
+
+.topic3{
+    width: 60%;
+    background-color: #f8d681;
+    margin:auto;
+}
+
+#frase, #colunas, #alternativas, #resposta{
+    display: none;
+}
