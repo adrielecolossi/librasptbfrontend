@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-axios.defaults.baseURL = 'http://localhost:3001/'
+axios.defaults.baseURL = 'https://bancolibrasptb.herokuapp.com'
 
 
 axios.interceptors.response.use(
