@@ -30,8 +30,8 @@ function Login() {
         } else{
        alert("Não autenticado, há erros na senha ou no email");
       }
-        },
-        catch((error) => {
+        }
+        .catch((error) => {
           alert("Não autenticado, há erros na senha ou no email");
         })
       );
