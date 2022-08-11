@@ -30,11 +30,11 @@ function Login() {
         } else{
        alert("Não autenticado, há erros na senha ou no email");
       }
-        }
+        })
         .catch((error) => {
           alert("Não autenticado, há erros na senha ou no email");
         })
-      );
+
   };
   useEffect(() => {
     let token = localStorage.getItem("tokenLibrasPTB");
