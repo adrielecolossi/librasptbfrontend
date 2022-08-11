@@ -20,16 +20,20 @@ function Login() {
       })
       .then(
         (response) => {
+          if(response.data.token!== undefined{
           token = response.data.token;
           let emailLogado = response.data.email;
           localStorage.setItem("tokenLibrasPTB", token);
           localStorage.setItem("user", emailLogado);
           alert("Autenticado");
           setRedirect(true)
+        } else{
+       alert("Não autenticado, há erros na senha ou no email");
+      }
         },
-        (error) => {
+        catch((error) => {
           alert("Não autenticado, há erros na senha ou no email");
-        }
+        })
       );
   };
   useEffect(() => {
