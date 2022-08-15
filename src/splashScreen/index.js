@@ -62,7 +62,7 @@ function SplashScreen() {
   useEffect(() => {
     let token = localStorage.getItem("tokenLibrasPTB");
     const getLogin = async () => {
-      const response = await axiosClient.get("/login", {
+      const response = await axiosClient.get("login", {
         params: { token },
       });
       
