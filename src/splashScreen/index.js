@@ -65,9 +65,12 @@ function SplashScreen() {
       const response = await axiosClient.get("/login", {
         params: { token },
       });
-      setIsLoggedIn(response.data.msg);
+      
     };
-    getLogin();
+    try{getLogin()
+    } catch (error){
+      console.log(error)
+    };
   }, []);
   if (isLoggedIn === "loggedIn") {
     header = <HeaderOne logged={true}></HeaderOne>;

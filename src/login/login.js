@@ -20,7 +20,7 @@ function Login() {
       })
       .then(
         (response) => {
-          if(response.data.msg == undefined){
+          if(response.data !== undefined){
           token = response.data.token;
           let emailLogado = response.data.email;
           localStorage.setItem("tokenLibrasPTB", token);
